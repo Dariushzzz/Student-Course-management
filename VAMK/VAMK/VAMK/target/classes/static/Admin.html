@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Admin</h1>
+<div></div>
+
+
+<div id="studentContainer"></div>
+<div id="coursesContainer"></div>
+
+<label for="studentIdInput">Student ID:</label>
+<input type="text" id="studentIdInput">
+<button id="studentIdButton" onclick="fetchStudentDetails()">Find Student</button>
+
+<div id="studentDetails">
+
+</div>
+
+<label for="courseIdInput">Course ID:</label>
+<input type="text" id="courseIdInput">
+<button id="courseIdButton" onclick="fetchCourseDetails()">Find Course</button>
+
+<div id="courseDetails">
+</div>
+<script src="/search.js"></script>
+
+
+<h2>Modify Students</h2>
+
+<div>
+    <label for="StudentId"> Student ID:</label>
+    <input type="text" id="StudentId">
+</div>
+
+<div>
+    <label for="firstname">Student firstname:</label>
+    <input type="text" id="firstname">
+</div>
+
+<div>
+    <label for="lastname">Student lastname:</label>
+    <input type="text" id="lastname">
+</div>
+
+<div>
+    <label for="email">Student email:</label>
+    <input type="text" id="email">
+</div>
+
+<div>
+    <button id="addStudentButton" onclick="addStudent()">Add Student</button>
+</div>
+
+<div>
+    <button id="updateStudentButton" onclick="updateStudent()">Update Student</button>
+</div>
+
+
+<h2>Modify Courses</h2>
+<div>
+    <label for="CourseId"> Course ID:</label>
+    <input type="text" id="CourseId">
+</div>
+
+<div>
+    <label for="CourseName"> Course name:</label>
+    <input type="text" id="CourseName">
+</div>
+
+<div>
+    <label for="Teacher"> Course teacher:</label>
+    <input type="text" id="Teacher">
+</div>
+
+<div>
+    <button id="addCourseButton" onclick="addCourse()">Add Course</button>
+</div>
+
+<div>
+    <button id="updateCourseButton" onclick="updateCourse()">Update Course</button>
+</div>
+
+<script src="/addStudent.js"></script>
+<script src="/updateStudent.js"></script>
+<script src="/addCourse.js"></script>
+<script src="/updateCourse.js"></script>
+
+</body>
+</html>
